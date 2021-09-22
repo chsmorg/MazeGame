@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cmm5b7finalproject.MazeGameController">
+   <children>
+      <AnchorPane fx:id="mazePane" layoutX="68.0" layoutY="43.0" prefHeight="450.0" prefWidth="450.0">
+         <children>
+            <Text fx:id="pauseText" layoutX="183.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="85.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Button fx:id="upButton" layoutX="265.0" layoutY="493.0" mnemonicParsing="false" onAction="#upButton" onKeyPressed="#keyPressed" prefHeight="27.0" prefWidth="55.0" text="Up" />
+      <Button fx:id="downButton" layoutX="265.0" layoutY="520.0" mnemonicParsing="false" onAction="#downButton" onKeyPressed="#keyPressed" prefHeight="27.0" prefWidth="55.0" text="Down" />
+      <Button fx:id="rightButton" layoutX="320.0" layoutY="520.0" mnemonicParsing="false" onAction="#rightButton" onKeyPressed="#keyPressed" prefHeight="27.0" prefWidth="55.0" text="Right" />
+      <Button fx:id="leftButton" layoutX="210.0" layoutY="520.0" mnemonicParsing="false" onAction="#leftButton" onKeyPressed="#keyPressed" prefHeight="27.0" prefWidth="55.0" text="Left" />
+      <MenuBar prefHeight="29.0" prefWidth="600.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Exit">
+              <items>
+                  <MenuItem fx:id="menuExit" mnemonicParsing="false" onAction="#menuExit" text="Exit To Menu" />
+                <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exit" text="Exit Game" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Records">
+               <items>
+                  <MenuItem fx:id="records" mnemonicParsing="false" onAction="#records" text="View Records" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Game">
+              <items>
+                  <MenuItem fx:id="reset" mnemonicParsing="false" onAction="#reset" text="Reset Maze" />
+                <MenuItem fx:id="pause" mnemonicParsing="false" onAction="#pause" text="Pause" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="53.0" layoutY="498.0" text="Time:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Text fx:id="timerTime" layoutX="31.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="77.21630859375">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Label contentDisplay="TOP" layoutX="420.0" layoutY="498.0" prefHeight="17.0" prefWidth="98.0" text="    High Score:" textFill="#e8c64d">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="highScoreText" layoutX="404.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="131.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

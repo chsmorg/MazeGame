@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="recordPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cmm5b7finalproject.RecordsController">
+   <children>
+      <MenuBar fx:id="menuDrag" prefHeight="29.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Return">
+               <items>
+                  <MenuItem fx:id="menuReturn" mnemonicParsing="false" onAction="#menuReturn" text="To Menu" />
+                  <MenuItem fx:id="mazeReturn" mnemonicParsing="false" onAction="#mazeReturn" text="To Maze" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Game Type">
+              <items>
+                <MenuItem fx:id="nMode" mnemonicParsing="false" onAction="#nMode" text="Normal Mode" />
+                  <MenuItem fx:id="TAMode" mnemonicParsing="false" onAction="#TAMode" text="Time Attack" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Difficulty">
+              <items>
+                  <MenuItem fx:id="easy" mnemonicParsing="false" onAction="#easy" text="Easy" />
+                  <MenuItem fx:id="normal" mnemonicParsing="false" onAction="#normal" text="Normal" />
+                <MenuItem fx:id="medium" mnemonicParsing="false" onAction="#medium" text="Medium" />
+                  <MenuItem fx:id="hard" mnemonicParsing="false" onAction="#hard" text="Hard" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="modeLabel" alignment="CENTER" layoutX="133.0" layoutY="51.0" prefHeight="73.0" prefWidth="337.0" text="NORMAL MODE" textAlignment="CENTER" textFill="#25ffd0" wrapText="true">
+         <font>
+            <Font name="Arial" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="difficultyLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="124.0" prefHeight="43.0" prefWidth="210.0" text="EASY" textAlignment="CENTER" textFill="#1fc260" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="record1" fill="GOLD" layoutX="166.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record2" fill="SILVER" layoutX="166.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record3" fill="#cd7f32" layoutX="167.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record8" layoutX="167.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record7" layoutX="167.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record6" layoutX="167.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record5" layoutX="167.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record4" layoutX="167.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record9" layoutX="167.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="record10" layoutX="167.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="268.21630859375">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

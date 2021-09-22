@@ -1,0 +1,12 @@
+2.0,help
+21.2,Anonymos
+102.0,Madi
+503.0,chase
+323,chase
+123,chase
+992,chase
+83,chase
+30,chase
+33,chase
+144,madi
+251.5,madi
